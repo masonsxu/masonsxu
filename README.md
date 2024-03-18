@@ -15,5 +15,5 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[Masonsxu](https://github-readme-stats.vercel.app/api?username=masonsxu)
+[![Masonsxu](https://github-readme-stats.vercel.app/api?username=masonsxu)]()
 
