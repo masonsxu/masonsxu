@@ -10,7 +10,7 @@
 - 🌱 I'm currently learning **new technologies**
 - 👯 I'm looking to collaborate on **open source projects**
 - 💬 Ask me about **anything tech-related**
-- 📫 How to reach me: **your-email@example.com**
+- 📫 How to reach me: **masonsxu@foxmail.com**
 - ⚡ Fun fact: **I love solving complex problems!**
 
 ## 🛠️ Technologies & Tools
