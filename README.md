@@ -72,10 +72,15 @@
 - 📚 Contributing to **open source projects**
 - 🎨 Improving **UI/UX design skills**
 
-## 📈 Activity Graph
+## 📈 Contribution Activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=masonsxu&theme=tokyo-night&hide_border=true" alt="Activity Graph"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=masonsxu&theme=tokyonight" alt="Profile Summary"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=masonsxu&theme=tokyonight" alt="Repos per Language"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=masonsxu&theme=tokyonight" alt="Most Commit Language"/>
 </div>
 
 ## 🤝 Let's Connect!
