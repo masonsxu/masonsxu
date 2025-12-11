@@ -1,108 +1,65 @@
-# 👋 Hi, I'm Mason Xu
+# Mason Xu
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2F81F7&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;Always+learning+new+things;Love+to+code+and+explore!" alt="Typing SVG" />
-</div>
+**Backend Architect | Cloud Native Practitioner**
 
-## 🚀 About Me
+> Building resilient, scalable systems with thoughtful design and pragmatic engineering.
 
-- 🔭 I'm currently working on **exciting projects**
-- 🌱 I'm currently learning **new technologies**
-- 👯 I'm looking to collaborate on **open source projects**
-- 💬 Ask me about **anything tech-related**
-- 📫 How to reach me: **masonsxu@foxmail.com**
-- ⚡ Fun fact: **I love solving complex problems!**
+---
 
-## 🛠️ Technologies & Tools
+## Philosophy
 
-<div align="center">
-  
-### Programming Languages
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+在复杂性与简洁性之间寻找平衡。相信优秀的架构不是设计出来的，而是在持续演进中涌现的。专注于构建可理解、可测试、可演化的系统，而非过早的抽象和过度工程。
 
-### Frontend Development
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+## Architectural Focus
 
-### Backend Development
-![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
-![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
+**Distributed Systems**
+微服务治理、服务网格、一致性与容错设计
 
-### Database
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+**Domain-Driven Design**
+战略设计与战术实现、限界上下文划分、领域建模
 
-### DevOps & Tools
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+**High-Performance Computing**
+Go 并发模型、零拷贝技术、RPC 框架优化
 
-</div>
+**Infrastructure as Code**
+容器编排、GitOps、声明式配置管理
 
-## 📊 GitHub Stats
+## Technology Stack
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=masonsxu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=masonsxu&layout=compact&langs_count=8&theme=tokyonight"/>
-</div>
+**Runtime & Framework**
+Go · CloudWeGo (Kitex/Hertz) · gRPC
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=masonsxu&theme=tokyonight" alt="GitHub Streak"/>
-</div>
+**Data & Storage**
+PostgreSQL · etcd · Object Storage (S3)
 
-## 🏆 GitHub Trophies
+**Observability**
+Structured Logging · Distributed Tracing · Metrics
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=masonsxu&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies"/>
-</div>
+**Development Practice**
+IDL-First · Dependency Injection · Contract Testing
 
-## 🎯 Current Focus
+## Notable Work
 
-- 🔍 Exploring **AI/ML technologies**
-- 🌐 Building **full-stack applications**
-- 📚 Contributing to **open source projects**
-- 🎨 Improving **UI/UX design skills**
+**[CloudWeGo Scaffold](https://github.com/masonsxu/cloudwego-scaffold)**
 
-## 📈 Contribution Activity
+生产级微服务脚手架，展示了从 IDL 定义到服务实现的完整工程实践。遵循 DDD 架构原则，实现了清晰的层次划分和依赖管理。提供开箱即用的认证授权、对象存储、可观测性等基础设施能力。
 
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=masonsxu&theme=tokyonight" alt="Profile Summary"/>
-</div>
+*Tech: Go · Kitex · Hertz · Thrift · Wire · GORM · Docker*
 
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=masonsxu&theme=tokyonight" alt="Repos per Language"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=masonsxu&theme=tokyonight" alt="Most Commit Language"/>
-</div>
+## Current Interests
 
-## 🤝 Let's Connect!
+- 微服务架构的演进路径：从单体到微服务的渐进式拆分策略
+- 云原生应用的 12-Factor 实践与容器化最佳实践
+- Go 语言在高并发场景下的性能优化与内存管理
+- 分布式系统的可靠性工程：熔断、限流、降级策略
 
-<div align="center">
-  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/your-handle)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139)](https://your-portfolio-url.com)
+## Get in Touch
 
-</div>
+- **GitHub**: [@masonsxu](https://github.com/masonsxu)
+- **Email**: masonsxu@foxmail.com
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=masonsxu&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+<i>"Simplicity is prerequisite for reliability." — Edsger W. Dijkstra</i>
 </div>
-
-<div align="center">
-  
-**"Code is like humor. When you have to explain it, it's bad."** – Cory House
-
-</div>
-
