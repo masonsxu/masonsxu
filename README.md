@@ -31,17 +31,6 @@ var me = Mason{
   <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/masonsxu/masonsxu/output/github-snake-dark.svg" />
 </picture>
 
-<br/>
-
-<p align="center">
-  <a href="https://github.com/masonsxu">
-    <img height="160" src="https://github-readme-stats.vercel.app/api?username=masonsxu&show_icons=true&bg_color=0C0C0E&title_color=D4AF37&text_color=FCFCFC&icon_color=D4AF37&border_color=27272A&count_private=true&hide_title=true" alt="stats" />
-  </a>
-  <a href="https://github.com/masonsxu">
-    <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=masonsxu&layout=compact&bg_color=0C0C0E&title_color=D4AF37&text_color=FCFCFC&icon_color=D4AF37&border_color=27272A&langs_count=6&hide_title=true" alt="langs" />
-  </a>
-</p>
-
 <p align="center">
   <a href="mailto:masonsxu@foxmail.com">
     <img src="https://img.shields.io/badge/masonsxu@foxmail.com-D4AF37?style=flat-square&logo=gmail&logoColor=0C0C0E&labelColor=0C0C0E" alt="email" />
