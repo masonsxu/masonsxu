@@ -37,3 +37,6 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+
+# Remotion 本地渲染输出
+banner/out/
