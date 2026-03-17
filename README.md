@@ -1,5 +1,12 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=D4AF37&center=true&vCenter=true&width=500&lines=Mason+Xu;Go+Microservice+Architect;CloudWeGo+Contributor" alt="Typing SVG" />
+  <img src="./assets/banner.gif" alt="Mason Xu - Go Architect & Tech Lead" width="840" />
+</div>
+
+<!-- Fallback: 首次 push 后 GitHub Actions 会自动渲染 banner.gif -->
+<!-- 手动触发: Actions → Render Banner → Run workflow -->
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=D4AF37&center=true&vCenter=true&width=620&lines=Mason+Xu;Go+Architect+%C2%B7+Tech+Lead;Led+Python+%E2%86%92+Go+Migration;99.9%25+SLA+%C2%B7+87.5%25+Faster+Deploys" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -8,20 +15,29 @@
 // mason.go
 package main
 
-type Mason struct {
-	Role       string   `kitex:"required"`
-	Stack      []string `thrift:"stack,1"`
-	Focus      string   `json:"focus"`
-	OpenSource string   `json:"open_source"`
+type Architect struct {
+	Role   string   `kitex:"required"`
+	Stack  []string `thrift:"core,1"`
+	Impact []string `json:"impact"`
 }
 
-var me = Mason{
-	Role:       "Go 微服务架构师 · 技术负责人",
-	Stack:      []string{"Go", "Kitex", "Hertz", "PostgreSQL", "Redis", "Docker"},
-	Focus:      "医疗信息化 · 10 个微服务 · 52 家医院",
-	OpenSource: "hertz-contrib/jwt · hertz-contrib/obs-opentelemetry · cloudwego/abcoder",
+var me = Architect{
+	Role:  "Go Architect · Tech Lead · CloudWeGo Contributor",
+	Stack: []string{"Go", "CloudWeGo/Kitex", "Hertz", "gRPC", "PostgreSQL", "Redis", "Docker", "OpenTelemetry"},
+	Impact: []string{
+		"Led Python → Go architecture migration for enterprise platform",
+		"Production systems with 99.9% SLA",
+		"87.5% deployment acceleration via containerization",
+		"DDD + API Gateway + Full-stack observability",
+	},
 }
 ```
+
+<p align="center">
+  <img src="https://img.shields.io/badge/SLA-99.9%25-D4AF37?style=for-the-badge&labelColor=0D1117" alt="SLA" />
+  <img src="https://img.shields.io/badge/Deploy_Speed-↑87.5%25-D4AF37?style=for-the-badge&labelColor=0D1117" alt="Deploy Speed" />
+  <img src="https://img.shields.io/badge/Team-8_Engineers-D4AF37?style=for-the-badge&labelColor=0D1117" alt="Team" />
+</p>
 
 <br/>
 
