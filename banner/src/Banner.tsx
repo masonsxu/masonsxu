@@ -5,13 +5,15 @@ import {
   useVideoConfig,
   interpolate,
   spring,
-  Easing,
 } from "remotion";
 import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { loadFont } from "@remotion/google-fonts/JetBrainsMono";
 
-const { fontFamily } = loadFont();
+const { fontFamily } = loadFont("normal", {
+  weights: ["400", "700"],
+  subsets: ["latin"],
+});
 
 // === Design Tokens ===
 const BG = "#0D1117";
@@ -32,7 +34,6 @@ const GridBackground: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
-      {/* Subtle dot grid */}
       <AbsoluteFill
         style={{
           backgroundImage: `radial-gradient(${TAG_BORDER} 1px, transparent 1px)`,
@@ -40,7 +41,6 @@ const GridBackground: React.FC<{ children: React.ReactNode }> = ({
           opacity: 0.4,
         }}
       />
-      {/* Bottom accent line */}
       <div
         style={{
           position: "absolute",
@@ -62,33 +62,32 @@ const NameScene: React.FC = () => {
   const { fps } = useVideoConfig();
 
   const name = "Mason Xu";
-  const title = "Go Architect  ·  Tech Lead  ·  CloudWeGo Contributor";
+  const title = "Go Architect  ·  CloudWeGo Contributor";
 
-  // Typewriter for name
   const nameLen = interpolate(frame, [0, 0.6 * fps], [0, name.length], {
     extrapolateRight: "clamp",
     extrapolateLeft: "clamp",
   });
   const visibleName = name.slice(0, Math.floor(nameLen));
 
-  // Cursor blink
   const showCursor = frame < 1.8 * fps;
   const cursorOn = Math.sin(frame * 0.4) > 0;
 
-  // Title entrance
   const titleProgress = spring({
-    frame: frame - Math.floor(0.8 * fps),
+    frame,
     fps,
+    delay: Math.floor(0.8 * fps),
     config: { damping: 200 },
   });
   const titleOpacity = interpolate(titleProgress, [0, 1], [0, 1]);
   const titleY = interpolate(titleProgress, [0, 1], [15, 0]);
 
-  // Decorative brackets
-  const bracketOpacity = interpolate(frame, [0.4 * fps, 0.8 * fps], [0, 0.3], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  const bracketOpacity = interpolate(
+    frame,
+    [0.4 * fps, 0.8 * fps],
+    [0, 0.3],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+  );
 
   return (
     <GridBackground>
@@ -96,7 +95,6 @@ const NameScene: React.FC = () => {
         style={{ justifyContent: "center", alignItems: "center" }}
       >
         <div style={{ textAlign: "center", position: "relative" }}>
-          {/* Decorative brackets */}
           <div
             style={{
               position: "absolute",
@@ -124,7 +122,6 @@ const NameScene: React.FC = () => {
             {"}"}
           </div>
 
-          {/* Name */}
           <div
             style={{
               fontSize: 52,
@@ -141,7 +138,6 @@ const NameScene: React.FC = () => {
             )}
           </div>
 
-          {/* Title */}
           <div
             style={{
               fontSize: 16,
@@ -179,7 +175,6 @@ const TechStackScene: React.FC = () => {
     "Casbin RBAC",
   ];
 
-  // Section title
   const headerProgress = spring({ frame, fps, config: { damping: 200 } });
 
   return (
@@ -192,7 +187,6 @@ const TechStackScene: React.FC = () => {
         }}
       >
         <div style={{ textAlign: "center", width: "100%" }}>
-          {/* Header */}
           <div
             style={{
               fontSize: 14,
@@ -205,7 +199,6 @@ const TechStackScene: React.FC = () => {
             {"// core_stack.go"}
           </div>
 
-          {/* Tags */}
           <div
             style={{
               display: "flex",
@@ -235,7 +228,7 @@ const TechStackScene: React.FC = () => {
                     padding: "5px 14px",
                     borderRadius: 16,
                     border: `1px solid ${ACCENT}40`,
-                    backgroundColor: `${TAG_BG}`,
+                    backgroundColor: TAG_BG,
                     fontSize: 13,
                     ...baseFont,
                   }}
@@ -245,95 +238,6 @@ const TechStackScene: React.FC = () => {
               );
             })}
           </div>
-        </div>
-      </AbsoluteFill>
-    </GridBackground>
-  );
-};
-
-// === Scene 3: Impact Stats Counter ===
-const StatsScene: React.FC = () => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const stats = [
-    { label: "Production SLA", value: 99.9, suffix: "%", decimals: 1 },
-    { label: "Deploy Speedup", value: 87.5, suffix: "%", decimals: 1 },
-    { label: "Team Size", value: 8, suffix: "", decimals: 0 },
-  ];
-
-  return (
-    <GridBackground>
-      <AbsoluteFill
-        style={{ justifyContent: "center", alignItems: "center" }}
-      >
-        <div
-          style={{
-            display: "flex",
-            gap: 50,
-            alignItems: "center",
-          }}
-        >
-          {stats.map((stat, i) => {
-            const delay = i * 6;
-            const entrance = spring({
-              frame,
-              fps,
-              delay,
-              config: { damping: 200 },
-            });
-            const bounce = spring({
-              frame,
-              fps,
-              delay: delay + 15,
-              config: { damping: 8 },
-            });
-
-            const currentValue = interpolate(entrance, [0, 1], [0, stat.value]);
-            const displayValue =
-              stat.decimals > 0
-                ? currentValue.toFixed(stat.decimals)
-                : Math.floor(currentValue).toString();
-
-            const scaleEffect = interpolate(bounce, [0, 1], [0.8, 1]);
-
-            return (
-              <div
-                key={stat.label}
-                style={{
-                  textAlign: "center",
-                  transform: `scale(${scaleEffect})`,
-                  opacity: interpolate(entrance, [0, 0.3], [0, 1], {
-                    extrapolateRight: "clamp",
-                  }),
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: 38,
-                    fontWeight: 700,
-                    color: ACCENT,
-                    ...baseFont,
-                  }}
-                >
-                  {displayValue}
-                  {stat.suffix && (
-                    <span style={{ fontSize: 20 }}>{stat.suffix}</span>
-                  )}
-                </div>
-                <div
-                  style={{
-                    fontSize: 11,
-                    color: MUTED,
-                    marginTop: 6,
-                    ...baseFont,
-                  }}
-                >
-                  {stat.label}
-                </div>
-              </div>
-            );
-          })}
         </div>
       </AbsoluteFill>
     </GridBackground>
@@ -357,16 +261,6 @@ export const Banner: React.FC = () => {
         <TransitionSeries.Sequence durationInFrames={75}>
           <TechStackScene />
         </TransitionSeries.Sequence>
-
-        <TransitionSeries.Transition
-          presentation={fade()}
-          timing={linearTiming({ durationInFrames: 15 })}
-        />
-
-        <TransitionSeries.Sequence durationInFrames={65}>
-          <StatsScene />
-        </TransitionSeries.Sequence>
-
       </TransitionSeries>
     </AbsoluteFill>
   );
