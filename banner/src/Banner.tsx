@@ -61,7 +61,7 @@ const NameScene: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const name = "Mason Xu";
+  const name = "MANSONS.XU";
   const title = "Go Architect  ·  CloudWeGo Contributor";
 
   const nameLen = interpolate(frame, [0, 0.6 * fps], [0, name.length], {
@@ -151,6 +151,7 @@ const NameScene: React.FC = () => {
           >
             {title}
           </div>
+
         </div>
       </AbsoluteFill>
     </GridBackground>
